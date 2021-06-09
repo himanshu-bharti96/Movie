@@ -1,0 +1,112 @@
+<section id="top-header">
+  <div id="top-left-header">
+    <div id="logo">
+      <img
+        src="https://www.pikpng.com/pngl/m/542-5422167_play-movie-elements-glossy-icon-fkmap2lo-png-download.png"
+        alt="logo"
+        id="logo-img"
+      />
+    </div>
+    <nav>
+      <div>
+        <a routerLink="" routerLinkActive="active">Movies</a>
+      </div>
+      <div>
+        <a routerLink="" routerLinkActive="active">TV Shows</a>
+      </div>
+      <div>
+        <a routerLink="" routerLinkActive="active">People</a>
+      </div>
+      <div>
+        <a routerLink="" routerLinkActive="active">More</a>
+      </div>
+    </nav>
+  </div>
+  <div id="top-right-header">
+    <nav>
+      <div>
+        <a id="add-button" routerLink="" routerLinkActive="active">+</a>
+      </div>
+      <div>
+        <a routerLink="" routerLinkActive="active">Login</a>
+      </div>
+      <div>
+        <a routerLink="" routerLinkActive="active">Join</a>
+      </div>
+      <div>
+        <a
+          class="material-icons search_ic"
+          routerLink=""
+          routerLinkActive="active"
+          >search</a
+        >
+      </div>
+    </nav>
+  </div>
+</section>
+<section id="search-bar">
+  <div id="search-container">
+    <div class="title">
+      <h1>Welcome.</h1>
+      <h3>Millions of movies, TV shows and people to discover. Explore now.</h3>
+    </div>
+    <div class="search">
+      <input
+        type="text"
+        placeholder="Search for a movie, tv show, a person ... "
+        class="search-input"
+      />
+      <button class="search-button">Search</button>
+    </div>
+  </div>
+</section>
+
+<section class="movies-container">
+  <div class="name"><h2>Movies</h2></div>
+  <div class="card-container">
+    <div *ngFor="let movie of movies" class="card">
+      <app-card [items]="movie"></app-card>
+      <h4 class="card-title">{{ movie.title }}</h4>
+      <h5 class="rating">Rating: {{ movie.ratings }}</h5>
+    </div>
+  </div>
+</section>
+<section class="tv-show-container">
+  <div class="name"><h2>TV Shows</h2></div>
+  <div class="card-container">
+    <div *ngFor="let tvShow of tvShows" class="card">
+      <app-card [items]="tvShow"></app-card>
+      <h4 class="card-title">{{ tvShow.name }}</h4>
+      <h5 class="rating">Rating: {{ tvShow.ratings }}</h5>
+    </div>
+  </div>
+</section>
+<section class="people-container">
+  <div class="name"><h2>People</h2></div>
+  <div class="card-container">
+    <div *ngFor="let person of people" class="card">
+      <app-card [items]="person"></app-card>
+      <h4 class="card-title">{{ person.name }}</h4>
+      <h5 class="rating">Rating: {{ person.ratings }}</h5>
+    </div>
+  </div>
+</section>
+<section class="footer">
+
+    <div id="facebook">
+    <a href="https://www.facebook.com/himanshu.bharti.18007/" alt="Himanshu Facebook" >
+      <img  src="../../../assets/logo/facebook-circular-logo.svg" alt="facebooklogo" class="footer-logo">
+    </a>
+  </div>
+  <div id = "instagram">
+    <a href="https://www.instagram.com/himanshu_bharti1996/?hl=en" alt="Himanshu Instagram">
+    <img src="../../../assets/logo/instagram.svg" alt="Instagramlogo" class="footer-logo">
+  </a>
+  </div>
+  <div id ="youtube">
+    <a href="https://www.youtube.com/channel/UCqQPioHhmsB879n-LhOyUmA">
+      <img src="../../../assets/logo/youtube.svg" alt="youtube">
+    </a>
+  </div>
+  
+</section>

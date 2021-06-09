@@ -1,0 +1,10 @@
+<div class="card">
+    <a href="https://en.wikipedia.org/wiki/Cruella_(film)">
+  <div *ngFor="let item of items | keyvalue">
+    <div *ngIf="item.key === 'poster'">
+      <img src="https://image.tmdb.org/t/p/w500{{ item.value }}" alt="movie" />
+    </div>
+  </div>
+</a>
+</div>
+<!-- https://image.tmdb.org/t/p/w500/bShgiEQoPnWdw4LBrYT5u18JF34.jpg -->

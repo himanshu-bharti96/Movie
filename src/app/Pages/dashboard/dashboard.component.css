@@ -1,0 +1,178 @@
+
+#top-header {
+  height: 60px;
+  background-color: #235784;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+#top-left-header {
+  display: flex;
+  align-items: center;
+}
+#top-right-header {
+  display: flex;
+  align-items: center;
+}
+#logo {
+  height: 100%;
+  width: 4rem;
+  margin-top: 3px;
+}
+
+#logo-img {
+  height: 80%;
+  width: 100%;
+  margin-left: 5px;
+  margin-top: 2px;
+  border-radius: 5px;
+  background-color: #235784;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  margin-left: 5px;
+}
+
+nav > div {
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+
+#add-button {
+  font-weight: 900;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#search-bar {
+  height: 300px;
+  background: #5C258D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#search-container {
+  height: 100%;
+  width: 100%;
+  padding: 60px 0 0 60px;
+}
+
+.title >h1{
+    margin-top: 0;
+    
+    color: white;
+    margin-bottom: 0;
+}
+.title >h3{
+    color: white;
+    margin-top: 0;
+}
+
+.search{
+    height: 40px;
+    width: 90%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding-left: 20px;
+    background-color: white;
+    border: none;
+}
+
+.search-input{
+    width: 80%;
+    height: 80%;
+    outline: 0;
+    border: none;
+    font-size: large;
+    color: grey;
+}
+
+.search-button{
+    margin-left: 20px;
+    height: 100%;
+    width: 10%;
+    border-radius: 40px;
+    border: none;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    
+    background: #FF8008;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.search-button:hover{
+    color: #000;
+}
+
+.movies-container{
+    height: max-content;
+    width: 100%;
+}
+.card-container{
+    display: flex;
+    height: max-content;
+    width: 100%;
+    overflow: auto;
+}
+
+.card{
+    margin-right: 20px;
+}
+
+.card-title{
+  margin-top: 40px;
+  cursor: pointer;
+  margin-bottom: 0;
+
+}
+
+.card-title:hover{
+  color: #4389A2;
+}
+.rating{
+  margin-top: 4px;
+}
+::-webkit-scrollbar{
+  width: 50px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 16px;
+}
+::-webkit-scrollbar-thumb {
+  background: skyblue; 
+  border-radius: 16px;
+}
+
+.footer{
+  height :500px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer >div{
+  height: 300px;
+  width: 200px;
+  margin: 50px;
+}
+
+.footer-logo{
+  height: 50%;
+  width: 100%;
+
+}
+
+
